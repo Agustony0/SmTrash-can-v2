@@ -1,6 +1,6 @@
 # SmTrash-can-v2
 
-Cuprins:
+Cuprins:<br>
   1.Ce este SmTrash-can-v2.<br>
   2.Date tehnice<br>
     2.1 Hardware<br>
