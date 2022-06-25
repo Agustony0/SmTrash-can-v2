@@ -1,8 +1,8 @@
 # SmTrash-can-v2
 
-Tehnologi folosite:
--Senzori:
-  -dht11(senzor de umiditate si temperatura)
+Tehnologi folosite: <br>
+-Senzori:<br>
+  -dht11(senzor de umiditate si temperatura)<br>
   -higrometru(Modul senzor umiditate sol, folosit in aces proiect pentru detectarea apei)
   -senzor ultra-sonic
 -Periferice:
