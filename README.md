@@ -1,11 +1,11 @@
 # SmTrash-can-v2
 
 Cuprins:
-  1.Ce este SmTrash-can-v2.
-  2.Date tehnice
-    2.1 Hardware
-    2.2 Software
-  3.Inovatie
+  1.Ce este SmTrash-can-v2.<br>
+  2.Date tehnice<br>
+    2.1 Hardware<br>
+    2.2 Software<br>
+  3.Inovatie<br>
 
 1.Ce este SMTrash-can-v2
   
