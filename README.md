@@ -4,26 +4,25 @@ Cuprins:<br>
   1.Ce este SmTrash-can-v2.<br>
   2.Date tehnice<br>
     2.1 Hardware<br>
-    2.2 Software<br>
   3.Inovatie<br>
 
 1.Ce este SMTrash-can-v2
   
-  SMTrash-can-v2 este un cos de gunoi care are incorporat un senzor ultra-sonic, acesta deschindanduse autoamt la prezenta unei persoane. Acesta mai dispune de un "pachet de siguranta", rolul acestui pachet este de prevenire in cazurile de inuntati si incendiu. In cazul in care unul dintre senzori detecteaza valori corespunzatore unui incident exterm, alarma incorporata este activata, panel-ul este updatat, si detinatorul cosului de gunoi este notificat prin WhatsApp.
+  Acest concept este o varianta avansată și de buget unui sistem de alarma tradițional, ținandu-te la curent cu orice ce se întâmplă în locuința ta indiferent unde te afli.
+SmTrash-Can v2 este un coș de gunoi care are încorporat un senzor ultra-sonic, acesta deschizându-se automat la prezenta unei persoane. Acesta mai dispune de un "pachet de siguranță", rolul acestui pachet este de prevenirea cazurilor de inundați și incendiu. În cazul în care unul dintre senzori detectează valori corespunzătoare unui incident extrem, alarma încorporată este activată, panel-ul este update-at(site localhost) și deținătorul coșului este notificat prin Whatsapp printr-un mesaj.
   
   Features:
     -deschiderea cosului de gunoi la prezenta unei persoane
     -existenta unui panel pe reteaua locala pentru verificarea starii incintei locuintei(temperarura, umiditate)
     -sistem de prevenire in caz de incendiu si inundatie
     -notificare pe panel, WhatsApp in cazul unei anomali( incendiu si inundatie)
+    -afisare temperatura
     
 2.Date tehnice<br>
   2.1 Hardware<br>
-    Automatizarea proiectului este facuta pe doua placi de dezvoltare, Arduino UNO si NodeMcu ESP8266. Pe arduino se colecteaza si calculeaza toate datele senzorilor si afisarea datelor pe baza inputurilor(dht11, higrometru, ultrasonic). Pe Esp8266 se afiseaza datele colectate de Arduino pe localhostul retelei, si trimiterea de notificari prin WhatsApp, acest lucru fiind posibil folosind un api(ThingESP) de trimitere de mesaje. Senzori folositi sunt in proximitatea cerintei utile de voltaj ai placi de dezoltare, insa pentru functionarea motirului servo(cel care deschide trapa cosului de gunoi) la o capacitate optima, am folosit un capacitor electrolitic de 470 uF 16v acest rezultand functionarea servo-ului. Initial am folosit o sursa externa de alimentae (cum este recomandat pentru un servo) baterie de 9v, conectata la un regulator de voltaj(7805) cu doua condensatoare eclecrtolitice de 10 uf si un condensator ceramic de 22 uf pentru noise, desi circuitul este practic pentru acest caz, din cauza neexistenti de tensine mare am renuntat la aceasta idee si am mutat alimentaea servoului pe arduino.
- 2.2 SoftWare<br>
-   Algoritmica din spatele acstui proiect este predominant de decizionalele.
-      
-  
+    Automatizarea proiectului este făcută pe două plăci de dezvoltare, Arduino UNO și NodeMcu ESP8266. Pe arduino se colectează și calculează toate datele senzorilor și afișarea datelor pe baza input-urilor(dht11, higrometru, ultrasonic). Pe Esp8266 se afișează datele colectate de Arduino pe localhost-ul rețelei, și trimiterea de notificări prin WhatsApp, acest lucru fiind posibil folosind un api(ThingESP) de trimitere de mesaje. Senzori folosiți sunt în proximitatea cerinței utile de voltaj ai plăci de dezvoltare, însă pentru funcționarea motorului servo(cel care deschide trapa coșului de gunoi) la o capacitate optimă, am folosit un condensator electrolitic de 470 uF 16v acest rezultând funcționarea servo-ului. Inițial am folosit o sursă externă de alimentare (cum este recomandat pentru un servo) baterie de 9v, conectată la un regulator de voltaj(7805) cu două condensatoare electrolitice de 10 uf și un condensator ceramic de 22 uf pentru noise, deși circuitul este practic pentru acest caz, din cauza neexistenți de tensiune mare am renunțat la această idee și am mutat alimentarea servo-ului pe arduino.
+
+
 
 Tehnologi folosite: <br>
 -Senzori:<br>
