@@ -3,8 +3,6 @@
 Cuprins:<br>
   1.Ce este SmTrash-can-v2.<br>
   2.Date tehnice<br>
-    2.1 Hardware<br>
-  3.Inovatie<br>
 
 1.Ce este SMTrash-can-v2
   
@@ -19,7 +17,6 @@ SmTrash-Can v2 este un coș de gunoi care are încorporat un senzor ultra-sonic,
     -afisare temperatura
     
 2.Date tehnice<br>
-  2.1 Hardware<br>
     Automatizarea proiectului este făcută pe două plăci de dezvoltare, Arduino UNO și NodeMcu ESP8266. Pe arduino se colectează și calculează toate datele senzorilor și afișarea datelor pe baza input-urilor(dht11, higrometru, ultrasonic). Pe Esp8266 se afișează datele colectate de Arduino pe localhost-ul rețelei, și trimiterea de notificări prin WhatsApp, acest lucru fiind posibil folosind un api(ThingESP) de trimitere de mesaje. Senzori folosiți sunt în proximitatea cerinței utile de voltaj ai plăci de dezvoltare, însă pentru funcționarea motorului servo(cel care deschide trapa coșului de gunoi) la o capacitate optimă, am folosit un condensator electrolitic de 470 uF 16v acest rezultând funcționarea servo-ului. Inițial am folosit o sursă externă de alimentare (cum este recomandat pentru un servo) baterie de 9v, conectată la un regulator de voltaj(7805) cu două condensatoare electrolitice de 10 uf și un condensator ceramic de 22 uf pentru noise, deși circuitul este practic pentru acest caz, din cauza neexistenți de tensiune mare am renunțat la această idee și am mutat alimentarea servo-ului pe arduino.
 
 
