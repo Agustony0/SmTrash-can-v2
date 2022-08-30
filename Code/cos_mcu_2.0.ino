@@ -25,8 +25,8 @@ float u;
 int msensor = A0; 
 int msvalue = 0; 
 
-const char* ssid = "UPC7F34B27";
-const char* pass = "Zcwcfj5x7apd";
+const char* ssid = "";
+const char* pass = "";
 
 void handleRoot();
 void handleLED();
@@ -74,7 +74,7 @@ else
 void setup() {
   Serial.begin(115200);
 
-  thing.SetWiFi("UPC7F34B27", "Zcwcfj5x7apd");
+  thing.SetWiFi("", "");
   
   thing.initDevice();
   
@@ -150,7 +150,7 @@ void handleRoot(){
      //mesaj_apa++;
      contor_apa=apa_detectata;
       String msg_apa="Apa detectata!";
-      thing.sendMsg("+40740700538", msg_apa);
+      thing.sendMsg("+", msg_apa);
       delay(5000);
      
   }
