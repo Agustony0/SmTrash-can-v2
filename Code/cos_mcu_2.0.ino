@@ -137,7 +137,7 @@ void handleRoot(){
    contor_tem=temperatura_ridicata;
    
     String msg_tem="Temperatura ridicata!";
-    thing.sendMsg("+40740700538", msg_tem);
+    thing.sendMsg("+", msg_tem);
     delay(5000);
   
   }
